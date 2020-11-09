@@ -1,0 +1,20 @@
+.wrapperMenu {
+  background-color: #d2abf6;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.wrapperMenu a {
+  background:#FF4444; /*добавляем фон к пункту меню*/
+  color:#fff;
+  padding:0px 15px;
+  line-height:50px;
+  text-decoration: none;
+  margin: 7px;
+}
+a:hover {
+  background-color: #3CBC8D;
+  height: 45px;
+  color: black;
+
+}

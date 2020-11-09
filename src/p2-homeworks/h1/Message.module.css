@@ -1,0 +1,53 @@
+.message {
+    display: flex;
+    border: 1px solid;
+    width: 350px;
+    margin: 0 auto;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 20px 10px 98px 1px rgba(158,77,250,0.81);
+    background-color: #d2abf6;
+}
+.wrapperLogo {
+    border-right: 1px solid;
+    border-radius: 25px;
+
+}
+.logo {
+    margin: 12px;
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.messages {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.wrapperName {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 30px;
+    align-items: center;
+}
+
+.time {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #0103c3;
+}
+
+.wrapperTime {
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapper {
+    width: 250px;
+}
