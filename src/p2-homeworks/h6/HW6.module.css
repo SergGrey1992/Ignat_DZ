@@ -1,0 +1,10 @@
+.wrapperHW6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.wrapper {
+    padding: 20px;
+}
