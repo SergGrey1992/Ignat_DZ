@@ -16,17 +16,35 @@ beforeEach(() => {
 
 test("sort name up", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "up"});
+    const sortArrayUp = newState.sort((a, b) => a.name.localeCompare(b.name))
 
-    console.log(newState);
-    // expect(...).toBe(...);
+    expect(sortArrayUp[0].name).toBe("Александр");
+    expect(sortArrayUp[1].name).toBe("Виктор");
+    expect(sortArrayUp[2].name).toBe("Дмитрий");
+    expect(sortArrayUp[3].name).toBe("Ирина");
+    expect(sortArrayUp[4].name).toBe("Коля");
+    expect(sortArrayUp[5].name).toBe("Кот");
 });
+
 test("sort name down", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});
+    const sortArrayUp = newState.sort((a, b) => b.name.localeCompare(a.name))
 
+    expect(sortArrayUp[0].name).toBe("Кот");
+    expect(sortArrayUp[1].name).toBe("Коля");
+    expect(sortArrayUp[2].name).toBe("Ирина");
+    expect(sortArrayUp[3].name).toBe("Дмитрий");
+    expect(sortArrayUp[4].name).toBe("Виктор");
+    expect(sortArrayUp[5].name).toBe("Александр");
 
 });
 test("check age 18", () => {
     const newState = homeWorkReducer(initialState, {type: "check", payload: 18});
 
-
+    const newStateSort = initialState.filter(n => n.age > 18)
+    console.log(newStateSort)
+    expect(newStateSort[0].age).toBe(66);
+    expect(newStateSort[1].age).toBe(44);
+    expect(newStateSort[2].age).toBe(40);
+    expect(newStateSort[3].age).toBe(55);
 });
